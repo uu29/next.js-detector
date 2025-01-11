@@ -107,8 +107,8 @@ document.addEventListener('DOMContentLoaded', async function () {
         }
 
         // 두 라우터 모두 검사
-        const { isAppRouter, indicators: appIndicators } = detectNextJsAppRouter();
-        const { isPageRouter, indicators: pageIndicators } = detectNextJsPageRouter();
+        const { isAppRouter } = detectNextJsAppRouter();
+        const { isPageRouter } = detectNextJsPageRouter();
 
         // 두 라우터의 특징이 모두 있거나 Page Router의 특징만 있으면 Page Router로 판단
         if (isPageRouter) {
